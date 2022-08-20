@@ -1,10 +1,7 @@
-output "budget-name" {
-  description = "The name of the budget"
-  value       = aws_budgets_budget.monthly-budget.name
+output "pet-name" {
+  value       = random_pet.name.id
 }
 
-output "budget-limit-amount" {
-  description = "The budget limit"
-  value       = aws_budgets_budget.monthly-budget.limit_amount
-  sensitive   = true
+output "number-result" {
+  value       = random_integer.number.result
 }
